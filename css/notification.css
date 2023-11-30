@@ -1,0 +1,47 @@
+.notification {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.2;
+    border-radius: 16px;
+    background: #00992B;
+    padding: 32px;
+    z-index: 100;
+    opacity: 0;
+    transition: transform 0.5s ease;
+    transform: translateX(100%);
+}
+.notification_show {
+opacity: 1;
+transform: translateX(0);
+}
+
+.notification_success {
+    padding-right: 76px;
+    background: #00992B url("../img/iconamoon_check-bold.svg") right 32px center / 36px no-repeat;
+
+}
+
+.notification_error {
+    background-color: #900;
+}
+
+@media (max-width: 1024px) {
+    .notification {
+        padding: 30px;
+        font-size: 20px;
+    }
+    }
+@media (max-width: 768px) {
+    .notification {
+        position: fixed;
+        right: 50px;
+        bottom: 30px;
+        padding: 20px;
+        font-size: 16px;
+        margin-left: 20px;
+    }
+    }
